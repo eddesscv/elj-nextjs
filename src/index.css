@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Nosifer&family=Inter:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default theme: Light mode */
+:root {
+  --color-bg: #F0F2F5;       /* Light-gray background */
+  --color-text: #111827;     /* Text gray-900 */
+  --color-subtext: #6b7280;  /* Text gray-500 */
+  --color-card: #ffffff;     /* White background for cards */
+  --color-accent: #5600f5;   /* Primary accent color */
+  --color-accent-hover: #4f00e0;  /* Accent hover state */
+  --color-highlight: #ECE7FB; /* Highlight background */
+  --color-border: #e5e7eb;   /* Border color */
+
+  /* Brand Colors */
+  --color-primary: #5600f5;   /* Deep Blue-Purple */
+  --color-secondary: #ffbc0d; /* Golden Yellow */
+  --color-tertiary: #f472b6;  /* Soft Pink */
+}
+
+/* Dark mode overrides */
+.dark {
+  --color-bg: #131E2C;        /* Dark background */
+  --color-text: #f9fafb;      /* Text white */
+  --color-subtext: #9ca3af;   /* Text gray-400 */
+  --color-card: #1C293B;      /* Dark card background */
+  --color-accent: #f472b6;    /* Brighter purple for dark mode #f472b6*/
+  --color-accent-hover: #4f00e0;
+  --color-highlight: #374151; /* Darker highlight for dark mode */
+  --color-border: #374151;    /* Border gray-700 */
+
+  /* Brand Colors */
+  --color-primary: #6366f1;
+  --color-secondary: #ffbc0d; /* Golden Yellow */
+  --color-tertiary: #f472b6;  /* Soft Pink */
+}
+
+/* Apply vars globally */
+body {
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
